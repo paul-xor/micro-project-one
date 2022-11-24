@@ -16,13 +16,14 @@ const CommentCreate = ({ postId }) => {
 
   return (
     <div>
-      <form onSubmit={onSubmit}>
-        <div className="form-group">
+      <form onSubmit={onSubmit} style={{ margin: "20px" }}>
+        <div className="form-group" >
           <label>New Comment</label>
           <input
             value={content}
             onChange={(e) => setContent(e.target.value)}
             className="form-control"
+            style={{ margin: "10px 0" }}
           />
         </div>
         <button className="btn btn-primary">Submit</button>
