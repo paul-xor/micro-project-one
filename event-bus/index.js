@@ -7,6 +7,8 @@ const app = express()
 app.use(json())
 app.use(cors())
 
+const events = []
+
 app.post("/events", (req, res) => {
   const event = req.body;
 
